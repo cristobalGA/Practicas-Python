@@ -1,0 +1,20 @@
+ {% extends "forms.html" %}
+ {% block title %}Carros{% endblock title %}
+
+ {% block contenido %}
+ <div class="col-lg-4">
+    <p>Lista de Carros</p>
+ </div>
+ {% for carro in object_list %}
+ <div class="col-lg-4 bg-dark text-light">
+    <p><b>Nombre del Carro: </b>{{ carro.Nombre_carro }}</p>
+    <p><b>Modelo: </b>{{ carro.Modelo }}</p>
+    <p><b>Costo: </b>{{ carro.Costo }}</p>
+    
+    
+</div>
+{% empty %}
+<h1>No se encuentra ningun carro</h1>
+{% endfor %}
+<a href="/">back</a>
+{% endblock contenido %}

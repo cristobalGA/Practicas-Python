@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block titulo %}Detailview músico{% endblock %}
+{% block contenido %}
+
+Detail view de Músico
+
+<h1>{{ musico.nombremusico }}</h1>
+<p>Número de discos: <i>{{ musico.nodiscosmusico }}</i></p>
+<p>Fecha de nacimiento: <i>{{ musico.fechanacmusico }}</i></p>
+
+
+{% endblock %}
+

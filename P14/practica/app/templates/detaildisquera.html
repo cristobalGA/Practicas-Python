@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block titulo %}Detailview disquera{% endblock %}
+{% block contenido %}
+
+Detail view de Disqueras
+
+<h1>{{ disquera.nombredisquera }}</h1>
+<p>Número de discos: <i>{{ disquera.nodiscos }}</i></p>
+<p>CEO: <i>{{ disquera.ceo }}</i></p>
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block titulo %}Herencia 4{% endblock %}
+{% block contenido %}y yo soy la plantilla cuatro
+
+<h1>Formulario 4</h1>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Guardar</button>
+        </form>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+ {% extends "forms.html" %}
+ {% block title %}Personas{% endblock title %}
+
+ {% block contenido %}
+ <div class="col-lg-4">
+    <p>Lista de personas</p>
+ </div>
+ {% for persona in object_list %}
+ <div class="col-lg-4 bg-dark text-light">
+    <p><b>Nombre de la persona: </b>{{ persona.Nombre }}</p>
+    <p><b>Apellido Paterno: </b>{{ persona.Apellido_Paterno }}</p>
+    <p><b>Apellido Materno: </b>{{ persona.Apellido_Materno }}</p>
+    <p><b>Edad: </b>{{ persona.Edad }}</p>
+    
+</div>
+{% empty %}
+<h1>No se encuentra ninguna persona</h1>
+{% endfor %}
+<a href="/">back</a>
+{% endblock contenido %}

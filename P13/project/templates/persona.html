@@ -1,0 +1,10 @@
+{% extends "forms.html" %}
+{% block titulo %}Detailview Persona{% endblock %}
+{% block contenido %}
+
+Detail view de Persona
+
+<h1>{{ persona.nombrepersona }}</h1>
+<p>Apellidos: <i>{{ persona.Apellido_Paterno }} {{ persona.Apellido_Materno }}</i></p>
+
+{% endblock %}

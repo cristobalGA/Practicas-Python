@@ -1,0 +1,15 @@
+{% extends "forms.html" %}
+{% block titulo %}Herencia 5{% endblock %}
+
+
+{% block contenido %}
+
+
+
+<h1>Formulario 5</h1>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Guardar</button>
+        </form>
+<a href="/">back</a>
+{% endblock %}

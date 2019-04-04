@@ -1,0 +1,20 @@
+ {% extends "forms.html" %}
+ {% block title %}Comida{% endblock title %}
+
+ {% block contenido %}
+ <div class="col-lg-4">
+    <p>Lista de Comida</p>
+ </div>
+ {% for comida in object_list %}
+ <div class="col-lg-4 bg-dark text-light">
+    <p><b>Comida: </b>{{ comida.Nombre_comida }}</p>
+    <p><b>Tipo de comida: </b>{{ comida.Tipo_de_comida }}</p>
+    
+    
+    
+</div>
+{% empty %}
+<h1>No se encuentra ninguna comida</h1>
+{% endfor %}
+<a href="/">back</a>
+{% endblock contenido %}

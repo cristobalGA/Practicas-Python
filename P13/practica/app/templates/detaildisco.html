@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block titulo %}Detailview disco{% endblock %}
+{% block contenido %}
+
+Detail view de Disco
+
+<h1>{{ disco.nombredisco }}</h1>
+<p>Artista: <i>{{ disco.artista }}</i></p>
+<p>Número de canciones: <i>{{ disco.nocanciones }}</i></p>
+<p>Año de disco: <i>{{ disco.ano }}</i></p>
+
+{% endblock %}
+

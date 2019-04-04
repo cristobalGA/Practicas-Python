@@ -1,0 +1,29 @@
+{% extends "forms.html" %}
+{% block titulo %}Herencia 3{% endblock %}
+
+
+{% block contenido %}
+
+
+
+<h1>Formulario 1</h1>
+        <form method = "POST">
+			{% csrf_token %}  
+			<label for="Nombre_carro">Nombre_carro: </label>
+		    <input id="Nombre_carro" type="text" name="Nombre_carro" value="{{ Nombre_carro }}">
+
+		    <label for="Modelo">Apellido Paterno: </label>
+		    <input id="Modelo" type="text" name="Modelo" value="{{ Modelo }}">
+
+		    
+
+		    <label for="Costo">Costo: </label>
+		    <input id="Costo" type="text" name="Costo" value="{{ Costo }}">
+
+			<br>
+
+			<input type ="submit" value = "Registrar">
+				
+		</form>
+<a href="/">back</a>
+{% endblock %}

@@ -1,0 +1,20 @@
+ {% extends "forms.html" %}
+ {% block title %}Pasatiempo{% endblock title %}
+
+ {% block contenido %}
+ <div class="col-lg-4">
+    <p>Lista de Pasatiempos</p>
+ </div>
+ {% for pasatiempo in object_list %}
+ <div class="col-lg-4 bg-dark text-light">
+    <p><b>Pasatiempo: </b>{{ pasatiempo.Nombre_pasatiempo }}</p>
+    <p><b>Tiempo dedicado: </b>{{ pasatiempo.Tiempo }}</p>
+    
+    
+    
+</div>
+{% empty %}
+<h1>No se encuentra ningun pasatiempo</h1>
+{% endfor %}
+<a href="/">back</a>
+{% endblock contenido %}
